@@ -1,0 +1,45 @@
+﻿<DOCTYPE html>
+<html>
+
+    <head>
+        <title>ISIT420 HW4</title>
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+        <script src="Scripts/main.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+
+        <!--Markup Query-->
+        <div class="container">
+            <h3>Which stores are selling CDs for better markups? (price more than $13)</h3>
+            <h3>Here are the total numeber of sales per store of CD's sold at more than $13.</h3>
+            <input type="button" value="GetMarkups" onclick="TopMarkups()" /><br />
+            <ul id="markupsOutput" />
+        </div>
+
+        <!--Sales Person Performance Query-->
+        <div class="container">
+            <h3>I want to check the on performance of an employe.</h3>
+            <h3>Will show the total amount sold for a salesperson for the entire year.</h3>
+
+            Choose an employee
+            <select name="employees" id="employees"></select>
+            <input type="button" value="GetEmp" onclick="EmployeePerformance()" /><br />
+            <p id="employeeSalesOutput"></p>
+        </div>
+
+        <!--Stores Performance Query-->
+        <div class="container">
+            <h3>I want to see the performance of my stores.</h3>
+            
+            Choose an store 
+            <select name="stores" id="stores"></select>
+            <input type="button" value="GetStore" onclick="StorePerformance()" /><br />
+            <p id="storeSalesOutput"></p>
+        </div>
+
+    </body>
+
+</html>
